@@ -82,13 +82,12 @@ export default function RestaurantListings({
   }, [filters]);
 
   useEffect(() => {
-    const unsubscribe = getRestaurantsSnapshot((data) => {
-      setRestaurants(data);
-    }, filters);
-
-    return () => {
-      unsubscribe();
-    };
+    // const unsubscribe = getRestaurantsSnapshot((data) => {
+    //   setRestaurants(data);
+    // }, filters);
+    // return () => {
+    //   unsubscribe();
+    // };
   }, [filters]);
 
   return (
